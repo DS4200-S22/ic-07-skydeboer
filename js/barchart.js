@@ -139,14 +139,14 @@ const svg2 = d3
 
 const tooltip2 = d3.select("#csv-bar") 
   .append("div") 
-  .attr('id', "tooltip1") 
+  .attr('id', "tooltip2") 
   .style("opacity", 0) 
   .attr("class", "tooltip"); 
 
 // takes the hover tooltip with the data and adds the name of the data and the score in the hover box  
 // changes opacity to 1
 const mouseover2 = function(event, d) {
-  tooltip2.html("Day: " + d.day + "<br> Score: " + d.score + "<br>") 
+  tooltip2.html("Name: " + d.name + "<br> Score: " + d.score + "<br>") 
     .style("opacity", 1);  
 }
 

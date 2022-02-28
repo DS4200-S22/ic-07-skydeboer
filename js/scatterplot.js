@@ -18,7 +18,7 @@ const svg3 = d3
 
 const tooltip3 = d3.select("#csv-scatter") 
   .append("div") 
-  .attr('id', "tooltip1") 
+  .attr('id', "tooltip3") 
   .style("opacity", 0) 
   .attr("class", "tooltip"); 
 
@@ -37,7 +37,7 @@ const mousemove3 = function(event, d) {
 
 // this removes the tooltip when the mouse leaves the data, changes opacity to 0
 const mouseleave3 = function(event, d) { 
-  tooltip2.style("opacity", 0); 
+  tooltip3.style("opacity", 0); 
 }
 
 
